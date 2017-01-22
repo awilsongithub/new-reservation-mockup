@@ -3,20 +3,15 @@
   <head>
     <meta charset="utf-8" name='viewport' content='width=device-width initial-scale=1.0'>
     <title>form</title>
-
       <!-- BOOTSTRAP 4 CDN PASTE -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
       <!-- font awesome (from emailed link) -->
       <script src="https://use.fontawesome.com/10d23614c5.js"></script>
       <link rel="stylesheet" href="styles.css" media="screen" title="no title">
-
       <!-- <script type="text/javascript" src='libs/angular.min.js'></script> -->
       <script type="text/javascript" src='libs/jquery-1.6.2.min.js'></script>
       <script src='main.js'></script>
   </head>
-
-
 
   <body ng-app=''>
 
@@ -25,19 +20,87 @@
       <img src="hamburger-icon.png" class='icon hamburger-icon'  alt="" />
     </nav>
 
-
     <div class="container">
 
-      <h3 class='main-header'>New Reservation</h3>
+      <!-- =======================================
+
+              START SCREEN PAGE
+
+      ============================================ -->
+
+      <button type="submit" class="btn btn-tall">Create New Reservation</button>
+      <button type="submit" class="btn btn-tall">Duplicate Previous Reservation</button>
+
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseReservations" aria-expanded="false" aria-controls="collapseReservations">
+          <div class="card-header" role="tab" id="headingOne">
+            View My Current Reservations
+          </div>
+        </a>
+
+        <div id="collapseReservations" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block">
+            You currently have no reservations<br><br>
+          </div>
+        </div>
+      </div>
+      </div> <!-- end accordion -->
+
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseCheckouts" aria-expanded="false" aria-controls="collapseCheckouts">
+          <div class="card-header" role="tab" id="headingOne">
+            View My Current Checkouts
+          </div>
+        </a>
+        <div id="collapseCheckouts" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block">
+              Your currently have no items checked out<br><br>
+          </div>
+        </div>
+      </div>
+      </div> <!-- end accordion -->
+
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapsePrevious" aria-expanded="false" aria-controls="collapsePrevious">
+          <div class="card-header" role="tab" id="headingOne">
+            View My Previous Checkouts
+          </div>
+        </a>
+        <div id="collapsePrevious" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block">
+            <div class="row">
+              <div class="col col-6">
+                Sun. Jan. 22, 2017 12:30PM
+              </div>
+              <div class="col col-6">
+                Mon. Jan. 23, 2017 12:30PM
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      </div> <!-- end accordion -->
+
+      <!-- push Make a New Reservation to next phone screen -->
+      <div class="spacer-div"></div>
 
 
+      <!-- =======================================
+
+              NEW RESERVATION PAGE
+
+      ============================================ -->
+
+      <h4 class='main-header'>Make a New Reservation</h4>
 
 <!-- start  -->
-
-
     <div class="row">
       <div class="col col-3">
-        Start
+        Start Time
       </div>
       <div class="col col-5">
         <input class="form-control date-input" type="date" value="2011-08-19">
@@ -49,7 +112,7 @@
 
     <div class="row">
       <div class="col col-3">
-        End
+        End Time
       </div>
       <div class="col col-5">
         <input class="form-control date-input" type="date" value="2011-08-19">
@@ -61,12 +124,12 @@
 
     <div class="row">
       <div class="col col-3">
-        Pickup Option
+        Pickup Method
       </div>
       <div class="col col-9">
         <select class='form-control' name="select">
-          <option value="value1">Value 1</option>
-          <option value="value2" selected>Value 2</option>
+          <option value="value1">Pickup at checkout center</option>
+          <option value="value2" selected>Setup a delivery to me</option>
           <option value="value3">Value 3</option>
         </select>
       </div>
@@ -84,6 +147,16 @@
 
   <div id="collapseResources" class="collapse" role="tabpanel" aria-labelledby="headingOne">
     <div class="card-block">
+      <div class="row">
+        <div class="col col-9">
+          <input class="form-control" type="text" placeholder='Enter search term'>
+        </div>
+        <div class="col col-3">
+          <button class='btn btn-go-small' type="submit">Go</button>
+        </div>
+
+      </div>
+
       <ul>
         <!-- Button trigger modal -->
         <a data-toggle="modal" href="#resourceDetailModal">
@@ -144,20 +217,11 @@
               <div id="collapseTimeline" class="collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="table-container card-block">
 
-                  <!-- <img id='animate' onclick='move()' src="https://www.bhphotovideo.com/images/categoryImages/desktop/325x325/21008-DSLR-Cameras.jpg" alt="" /> -->
-
-
                   <a href="#" onclick='left()'><span><i class="fa fa-angle-double-left" aria-hidden="true"></i> reset | </span></a>
 
                   <a href="#" onclick='right()'><span>view availability <i class="fa fa-angle-double-right" aria-hidden="true"></i></span></a>
 
                   <table id='animate' class="overflow-table table table-sm">
-                    <!-- <thead>
-                      <tr>
-                        <th colspan=>Swipe to see availability</th>
-
-                      </tr>
-                    </thead> -->
                     <tbody>
                       <tr>
                         <td class='item-name'></td>
@@ -173,7 +237,6 @@
                         <td class='avail-color'>color</td>
                       </tr>
                       <tr>
-
                         <td class='item-name'>
                           Nikon Camera Black #01
                           <button type="button" class='btn btn-yellow btn-small' data-dismiss="modal">Reserve</button>
@@ -192,25 +255,17 @@
                     </tbody>
                   </table>
 
-
-
                 </div> <!-- end card-block -->
               </div>
             </div>
             </div> <!-- end accordion -->
-
-
-
           </div>
 
-        <!-- </div> -->  <!-- container-fluid -->
       </div>
 
     </div>
   </div>
 </div>
-
-
 
 <!-- add resource works similar to above but uses search fields
   open search fields..... open result set .... open result detail
@@ -229,7 +284,6 @@
         <label for="">Add Search Filters</label>
         <input class="form-control" type="text" placeholder='Author' >
         <input class="form-control" type="text" placeholder='Keyword'>
-        <input class="form-control" type="text" >
         <button type="submit" class="btn">Search</button>
         <button type="submit" class="btn">Show All Media</button>
       </div>
@@ -237,9 +291,12 @@
   </div>
   </div> <!-- end accordion -->
 
-
-
 <button data-dismiss="modal" class='btn btn-yellow'>Complete Reservation</button>
+
+<!-- push Make a New Reservation to top of phone screen -->
+<div class="push-new-res-to-top"></div>
+
+
 
 
 <!-- Add Note -->
