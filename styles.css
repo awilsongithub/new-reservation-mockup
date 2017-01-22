@@ -1,0 +1,146 @@
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 75px;
+  background-color: grey;
+  z-index: 5;
+  width: 100%;
+}
+.container{
+  margin-top: 100px;
+}
+.icon {
+    height: 70px;
+    width: 80px;
+}
+.shopping-cart-icon{
+  position: absolute;
+   right: 2px;
+   top: 2px;
+}
+.hamburger-icon{
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  height: 54px;
+  width: 67px;
+}
+.main-header {
+  margin-bottom: 20px;
+}
+.items-list-button{
+  list-style-image: url('sqpurple.gif');
+}
+.row{
+  padding-left: 10px;
+    padding-right: 10px;
+}
+.col {
+  padding-right: 5px;
+    padding-left: 5px;
+}
+input {
+  margin-bottom: 5px;
+}
+.ng-valid {
+   border-color: green;
+ }
+.ng-invalid {
+  border-color: red;
+}
+.ng-pristine {
+  border-color: inherit;
+}
+.error {
+  color: red;
+}
+/*div { border: 1px solid lightgrey; }*/
+.form-control {
+  margin-bottom: 10px;
+  padding: 0.3rem .3rem;
+}
+.card-block {
+  padding: 15px 10px 0 10px;
+
+}
+.table-container {
+    height: 344px;
+      position: relative;
+}
+
+#animate {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+}
+.overflow-table {
+  overflow: hidden;
+}
+
+.resource-image {
+  height: 100px;
+  width: auto;
+}
+
+.btn {
+  margin-bottom: 10px;
+  width: 100%;
+background-color: #f7f7f9;
+border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.btn-yellow {
+  height: 60px;
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+.btn-small {
+  padding: 5px;
+  height: 36px;
+  width: 76px;
+  display: block;
+  margin-top: 7px;
+}
+.item-name {
+  width: 205px;
+}
+.avail-color {
+  background-color: green;
+}
+.avail-date {
+
+}
+.card-header{
+  padding: 16px 15px;
+height: 60px;
+}
+.card > a {
+  color: black;
+}
+.card {
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: @screen-xs-max) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body {
+    color: red;
+  }
+
+}
+
+/*#accordion .card-header h6:after {
+  content: '-';
+  position: absolute;
+  right: 20px;
+  top:5px;
+  font-size:30px;
+}*/
+/*<!-- .panel-group .panel-heading a.collapsed:after {
+  content: '+';
+} -->*/
