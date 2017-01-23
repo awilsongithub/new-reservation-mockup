@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name='viewport' content='width=device-width initial-scale=1.0'>
+    <title>form</title>
+      <!-- BOOTSTRAP 4 CDN PASTE -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <!-- font awesome (from emailed link) -->
+      <script src="https://use.fontawesome.com/10d23614c5.js"></script>
+      <link rel="stylesheet" href="styles.css" media="screen" title="no title">
+      <!-- <script type="text/javascript" src='libs/angular.min.js'></script> -->
+      <script type="text/javascript" src='libs/jquery-1.6.2.min.js'></script>
+      <script src='main.js'></script>
+  </head>
+
+  <body ng-app=''>
+
+    <nav class=" navbar navbar-fixed-top">
+      <img class='icon shopping-cart-icon' src="cart-icon.png" alt="" />
+      <img src="hamburger-icon.png" class='icon hamburger-icon'  alt="" />
+    </nav>
+
+    <div class="container">
+
+
+
+
+      <!-- =======================================
+
+              NEW RESERVATION PAGE
+
+      ============================================ -->
+
+      <h4 id='make-res-heading' class='main-header'>Make a New Reservation</h4>
+
+<!-- start  -->
+    <div class="row">
+      <div class="col col-3">
+        Start Time
+      </div>
+      <div class="col col-5">
+        <input class="form-control date-input" type="date" value="2011-08-19">
+      </div>
+      <div class="col col-4">
+        <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-3">
+        End Time
+      </div>
+      <div class="col col-5">
+        <input class="form-control date-input" type="date" value="2011-08-19">
+      </div>
+      <div class="col col-4">
+        <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-3">
+        Pickup Method
+      </div>
+      <div class="col col-9">
+        <select class='form-control' name="select">
+          <option value="value1">Pickup at checkout center</option>
+          <option value="value2" selected>Setup a delivery to me</option>
+          <option value="value3">Value 3</option>
+        </select>
+      </div>
+    </div>
+
+<!-- picking from list opens item details modal to add to cart
+  ... takes back to home screen -->
+<div id="accordion" role="tablist" aria-multiselectable="true">
+<div class="card">
+  <a data-toggle="collapse" data-parent="#accordion" href="#collapseResources" aria-expanded="false" aria-controls="collapseResources">
+    <div class="card-header" role="tab" id="headingOne">
+          Add Resources
+    </div>
+  </a>
+
+  <div id="collapseResources" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="card-block">
+      <div class="row">
+        <div class="col col-9">
+          <input class="form-control" type="text" placeholder='Enter search term'>
+        </div>
+        <div class="col col-3">
+          <button class='btn btn-go-small' type="submit">Go</button>
+        </div>
+
+      </div>
+
+      <ul>
+        <!-- Button trigger modal -->
+        <a data-toggle="modal" href="#resourceDetailModal">
+          <li>Resource Type Here
+        </a>
+        <a data-toggle="modal" href="#resourceDetailModal">
+          <li>Resource Type Here
+        </a>
+        <a data-toggle="modal" href="#resourceDetailModal">
+          <li>Resource Type Here
+        </a>
+        <a data-toggle="modal" href="#resourceDetailModal">
+          <li>Resource Type Here
+        </a>
+
+      </ul>
+    </div>
+  </div>
+</div>
+</div> <!-- end accordion -->
+
+<!-- resources modal -->
+<!-- Modal -->
+<div class="modal fade" id="resourceDetailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Nikon Camera #01</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+      <div class="modal-body">
+        <!-- <div class="container-fluid"> -->
+
+          <div class="">
+            <img class='resource-image' src="https://www.bhphotovideo.com/images/categoryImages/desktop/325x325/21008-DSLR-Cameras.jpg" alt="" />
+          </div>
+
+          <div class="resource-details">
+            <p>Usage Fee: $10/hour</p>
+          </div>
+
+          <div class="add-resource">
+            <button data-dismiss="modal" class='btn btn-yellow'>Reserve One Of This Type</button>
+
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTimeline" aria-expanded="false" aria-controls="collapseTimeline">
+                <div class="card-header btn-yellow" role="tab" id="headingOne">
+                      Reserve Specific One of Type
+                </div>
+              </a>
+
+              <div id="collapseTimeline" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="table-container card-block">
+
+                  <a href="#" onclick='left()'><span><i class="fa fa-angle-double-left" aria-hidden="true"></i> reset | </span></a>
+
+                  <a href="#" onclick='right()'><span>view availability <i class="fa fa-angle-double-right" aria-hidden="true"></i></span></a>
+
+                  <table id='animate' class="overflow-table table table-sm">
+                    <tbody>
+                      <tr>
+                        <td class='item-name'></td>
+                        <td class='avail-date'>| 1/21/17</td>
+                        <td class='avail-date'>| 1/22/17</td>
+                      </tr>
+                      <tr>
+                        <td class='item-name'>
+                          Nikon Camera Black #01
+                          <button type="button" class='btn btn-yellow btn-small' data-dismiss="modal">Reserve</button>
+                        </td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                      </tr>
+                      <tr>
+                        <td class='item-name'>
+                          Nikon Camera Black #01
+                          <button type="button" class='btn btn-yellow btn-small' data-dismiss="modal">Reserve</button>
+                        </td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                      </tr>
+                      <tr>
+                        <td class='item-name'>
+                          Nikon Camera Black #01
+                          <button type="button" class='btn btn-yellow btn-small' data-dismiss="modal">Reserve</button>
+                        </td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div> <!-- end card-block -->
+              </div>
+            </div>
+            </div> <!-- end accordion -->
+          </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- add resource works similar to above but uses search fields
+  open search fields..... open result set .... open result detail
+  ... choose item takes back to home screen -->
+
+  <div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <a data-toggle="collapse" data-parent="#accordion" href="#collapseMedia" aria-expanded="false" aria-controls="collapseMedia">
+      <div class="card-header" role="tab" id="headingOne">
+        Add Media
+      </div>
+    </a>
+
+    <div id="collapseMedia" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-block">
+        <label for="">Add Search Filters</label>
+        <input class="form-control" type="text" placeholder='Author' >
+        <input class="form-control" type="text" placeholder='Keyword'>
+        <button type="submit" class="btn">Search</button>
+        <button type="submit" class="btn">Show All Media</button>
+      </div>
+    </div>
+  </div>
+  </div> <!-- end accordion -->
+
+<a href='index.html'><button data-dismiss="modal" class='btn btn-yellow'>Complete Reservation</button></a>
+
+<!-- push Make a New Reservation to top of phone screen -->
+<div class="push-new-res-to-top"></div>
+
+
+
+
+<!-- Add Note -->
+<!--  add repeats  -->
+<!-- add pickup option -->
+<!-- place reservation takes you to cart summary with confirm reservation button -->
+
+    </div> <!-- end container -->
+
+    <!-- BOOTSTRAP 4 CDN PASTE -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

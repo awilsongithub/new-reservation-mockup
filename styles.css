@@ -7,6 +7,9 @@
   z-index: 5;
   width: 100%;
 }
+#start-last-element {
+  margin-bottom: 75px;
+}
 .container{
   margin-top: 100px;
 }
@@ -86,8 +89,8 @@ input {
 .btn {
   margin-bottom: 10px;
   width: 100%;
-background-color: #f7f7f9;
-border-bottom: 1px solid rgba(0,0,0,.125);
+  background-color: #f7f7f9;
+  border-bottom: 1px solid rgba(0,0,0,.125);
 }
 .btn-yellow {
   height: 60px;
@@ -102,14 +105,14 @@ border-bottom: 1px solid rgba(0,0,0,.125);
   display: block;
   margin-top: 7px;
 }
+.btn-tall {
+  height: 60px;
+}
 .item-name {
   width: 205px;
 }
 .avail-color {
   background-color: green;
-}
-.avail-date {
-
 }
 .card-header{
   padding: 16px 15px;
@@ -123,7 +126,7 @@ height: 60px;
 }
 
 
-@media (max-width: @screen-xs-max) {
+/*@media (max-width: @screen-xs-max) {
   .container {
     padding-left: 0;
     padding-right: 0;
@@ -132,7 +135,7 @@ height: 60px;
     color: red;
   }
 
-}
+}*/
 
 /*#accordion .card-header h6:after {
   content: '-';
