@@ -1,12 +1,57 @@
+/*****************************
+SHOPPING CART STYLES
+******************************/
+
+.cart-flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #232e40;
+  width: 88px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.cart {
+  padding: 5px;
+}
+.cart-row-1 {
+ text-align: center;
+  width: 100px;
+  padding: 10px 5px 0px 5px;
+}
+.cart-row-2{
+  display: flex;
+  flex-direction: row;
+}
+.cart-quantity{
+  width: 20px;
+}
+
+.cart-items{
+  width: 60px;
+}
+
+
+
 .navbar-fixed-top {
   position: fixed;
   top: 0;
   left: 0;
   height: 75px;
-  background-color: grey;
+  background-color: #232E40;
   z-index: 5;
   width: 100%;
 }
+.fa {
+  color: white;
+  font-size: 24px;
+}
+.cart-flex-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 #start-last-element {
   margin-bottom: 75px;
 }

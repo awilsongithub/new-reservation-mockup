@@ -1,6 +1,7 @@
 
 // track position of element
 var pos = 0;
+var itemsInCart = 0;
 
 function left(){
   pos += 100;
@@ -11,6 +12,11 @@ function right(){
   pos -= 100;
   var elem = document.getElementById('animate');
   elem.style.left = pos + 'px';
+}
+function addToCart(){
+  itemsInCart++;
+ document.getElementById('cart-quantity').innerHTML = itemsInCart;
+ document.getElementById('cart-flex-container').style.color = 'yellow';
 }
 
 
