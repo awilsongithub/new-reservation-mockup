@@ -2,6 +2,45 @@
 SHOPPING CART STYLES
 ******************************/
 
+.modal-dialog {
+    max-width: 90%;
+    margin-top: 80px;
+}
+.item-detail-content,
+.item-added-message {
+    display: none;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+li {
+    border-top: 1px solid lightgrey;
+    list-style: none;
+}
+ul {
+        padding-left: 0px;
+}
+
+div.scrollmenu table {
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    margin: 10px 0 20px 0;
+}
+div.scrollmenu table td {
+    border: 1px solid grey;
+    padding: 10px;
+}
+.timeline-res-name {
+  background: white;
+  color: black;
+
+}
+
 .cart-flex-container {
   display: flex;
   flex-direction: column;
@@ -19,6 +58,8 @@ SHOPPING CART STYLES
   width: 100px;
   padding: 10px 5px 0px 5px;
 }
+
+
 .cart-row-2{
   display: flex;
   flex-direction: row;
@@ -30,8 +71,6 @@ SHOPPING CART STYLES
 .cart-items{
   width: 60px;
 }
-
-
 
 .navbar-fixed-top {
   position: fixed;
@@ -46,10 +85,15 @@ SHOPPING CART STYLES
   color: white;
   font-size: 24px;
 }
-.cart-flex-container {
+#cart-flex-container {
   position: fixed;
   top: 0;
   right: 0;
+}
+#error-flex-container {
+  position: fixed;
+  top: 0;
+  right: 100px;
 }
 
 #start-last-element {
@@ -149,6 +193,13 @@ input {
   width: 76px;
   display: block;
   margin-top: 7px;
+}
+.btn-view-previous {
+  padding: 5px;
+  height: 36px;
+  margin-top: 7px;
+  display: inline;
+  width: 48%;
 }
 .btn-tall {
   height: 60px;

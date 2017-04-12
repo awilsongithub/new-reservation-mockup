@@ -17,20 +17,34 @@
 
     <nav class=" navbar navbar-fixed-top">
 
+      <!-- ERRORS -->
+        <div class='cart-flex-container' id='error-flex-container'>
+          <div class='cart cart-row-1'>
+            <i class="fa fa-warning" aria-hidden="true"></i>
+          </div>
+          <div class='cart-row-2'>
+            <div class='cart cart-quantity' id='cart-quantity'>
+              0
+            </div>
+            <div class='cart cart-items'>errors</div>
+          </div>
+        </div>
+
+        <!-- CART -->
         <div class='cart-flex-container' id='cart-flex-container'>
           <div class='cart cart-row-1'>
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           </div>
           <div class='cart-row-2'>
             <div class='cart cart-quantity' id='cart-quantity'>
-              <!-- <span class='quantity'></span> -->
+              0
             </div>
-            <div class='cart cart-items'>Items</div>
+            <div class='cart cart-items'>in cart</div>
           </div>
         </div>
 
 
-      <i class="fa fa-warning" aria-hidden="true"></i>
+
       <!-- <img class='icon shopping-cart-icon' src="cart-icon.png" alt="" /> -->
       <img src="hamburger-icon.png" class='icon hamburger-icon'  alt="" />
     </nav>
@@ -46,7 +60,7 @@
 
       ============================================ -->
 
-      <h4 id='make-res-heading' class='main-header'>Make a New Reservation</h4>
+      <h4 id='make-res-heading' class='main-header'>Build Reservation</h4>
 
 <!-- start  -->
     <div class="row">
@@ -193,6 +207,61 @@
             <p>Usage Fee: $10/hour</p>
           </div>
 
+          <!-- horizontal scroll -->
+          <div class="scrollmenu">
+            <!-- <a href="#">Availability AVailabililty aalkfjadf kla jd</a>
+            <a href="#">Availability AVailabililty aalkfjadf kla jd</a>
+            <a href="#">Availability AVailabililty aalkfjadf kla jd</a>
+            <a href="#">Availability AVailabililty aalkfjadf kla jd</a>
+            <a href="#">Availability AVailabililty aalkfjadf kla jd</a>
+            <a href="#">Availability AVailabililty aalkfjadf kla jd</a>
+            <a href="#">Availability AVailabililty aalkfjadf kla jd</a> -->
+
+            <table>
+              <tr>
+                <td class='timeline-res-name'>
+                  Nikon Camera #XX <br>
+                  <a href="#">Reserve this item</a>
+                </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+              </tr>
+              <tr>
+                <td class='timeline-res-name'>Nikon Camera #XX  </td>
+
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+              </tr>
+              <tr>
+                <td class='timeline-res-name'>Nikon Camera #XX  </td>
+
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+                <td>Availabilty  </td>
+              </tr>
+            </table>
+          </div>
+
+
+
+
           <div class="add-resource">
             <button onclick='addToCart()' data-dismiss="modal" class='btn btn-yellow'>Reserve One Of This Type</button>
 
@@ -225,12 +294,8 @@
                         </td>
                         <td class='avail-color'>color</td>
                         <td class='avail-color'>color</td>
-                      </tr>
-                      <tr>
-                        <td class='item-name'>
-                          Nikon Camera Black #01
-                          <button type="button" class='btn btn-yellow btn-small' data-dismiss="modal">Reserve</button>
-                        </td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
                         <td class='avail-color'>color</td>
                         <td class='avail-color'>color</td>
                       </tr>
@@ -239,6 +304,22 @@
                           Nikon Camera Black #01
                           <button type="button" class='btn btn-yellow btn-small' data-dismiss="modal">Reserve</button>
                         </td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                      </tr>
+                      <tr>
+                        <td class='item-name'>
+                          Nikon Camera Black #01
+                          <button type="button" class='btn btn-yellow btn-small' data-dismiss="modal">Reserve</button>
+                        </td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
+                        <td class='avail-color'>color</td>
                         <td class='avail-color'>color</td>
                         <td class='avail-color'>color</td>
                       </tr>
@@ -281,7 +362,7 @@
   </div>
   </div> <!-- end accordion -->
 
-<a href='index.html'><button data-dismiss="modal" class='btn btn-yellow'>Complete Reservation</button></a>
+<a href='index.html'><button data-dismiss="modal" class='btn btn-yellow'>Proceed to Checkout</button></a>
 
 <!-- push Make a New Reservation to top of phone screen -->
 <div class="push-new-res-to-top"></div>

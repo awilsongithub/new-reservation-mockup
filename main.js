@@ -19,6 +19,17 @@ function addToCart(){
  document.getElementById('cart-flex-container').style.color = 'yellow';
 }
 
+$(".show-item-detail").click(function(){
+    $('.item-detail-content').show("slow");
+    $('.item-added-message').hide("slow");
+
+});
+
+$(".hide-item-detail").click(function(){
+    $('.item-detail-content').hide("slow");
+    $('.item-added-message').show("slow");
+});
+
 
 
 
