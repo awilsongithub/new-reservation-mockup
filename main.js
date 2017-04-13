@@ -8,26 +8,29 @@ function left(){
   var elem = document.getElementById('animate');
   elem.style.left = pos + 'px';
 }
+
 function right(){
   pos -= 100;
   var elem = document.getElementById('animate');
   elem.style.left = pos + 'px';
 }
+
 function addToCart(){
   itemsInCart++;
- document.getElementById('cart-quantity').innerHTML = itemsInCart;
- document.getElementById('cart-flex-container').style.color = 'yellow';
+  console.log(itemsInCart);
+ $('#cart-quantity').html(itemsInCart);
+ $('#cart-flex-container').css('color', 'yellow');
 }
 
 $(".show-item-detail").click(function(){
-    $('.item-detail-content').show("slow");
-    $('.item-added-message').hide("slow");
+    $('.item-detail-content').show(3000);
+    $('.item-added-message').hide(3000);
 
 });
 
 $(".hide-item-detail").click(function(){
-    $('.item-detail-content').hide("slow");
-    $('.item-added-message').show("slow");
+    $('.item-detail-content').hide(3000);
+    $('.item-added-message').show(3000);
 });
 
 

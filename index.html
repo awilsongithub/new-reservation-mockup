@@ -15,12 +15,41 @@
 
   <body ng-app=''>
 
-    <nav class=" navbar navbar-fixed-top">
-      <img class='icon shopping-cart-icon' src="cart-icon.png" alt="" />
-      <img src="hamburger-icon.png" class='icon hamburger-icon'  alt="" />
-    </nav>
+      <nav class=" navbar navbar-fixed-top">
 
-    <div class="container">
+          <div class="container">
+              <!-- ERRORS -->
+                <div class='cart-flex-container' id='error-flex-container'>
+                  <div class='cart cart-row-1'>
+                    <i class="fa fa-warning" aria-hidden="true"></i>
+                  </div>
+                  <div class='cart-row-2'>
+                    <div class='cart cart-quantity' id='cart-quantity'>
+                      0
+                    </div>
+                    <div class='cart cart-items'>errors</div>
+                  </div>
+                </div>
+
+                <!-- CART -->
+                <div class='cart-flex-container' id='cart-flex-container'>
+                  <div class='cart cart-row-1'>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  </div>
+                  <div class='cart-row-2'>
+                    <div class='cart cart-quantity' id='cart-quantity'>
+                      0
+                    </div>
+                    <div class='cart cart-items'>in cart</div>
+                  </div>
+                </div>
+
+          </div>
+
+
+      </nav>
+
+        <div class="below-nav-stuff container">
 
       <!-- =======================================
 
@@ -30,7 +59,7 @@
 
 
 
-      <a href="reservation.html"><button type="submit" class="btn btn-tall">Create New Reservation</button></a>
+      <a href="reservation2.html"><button type="submit" class="btn btn-tall">Create New Reservation</button></a>
 
       <button type="submit" class="btn btn-tall">Duplicate Previous Reservation</button>
 

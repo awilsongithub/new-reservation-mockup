@@ -16,40 +16,40 @@
   <body ng-app=''>
 
     <nav class=" navbar navbar-fixed-top">
+        <div class="container">
 
-      <!-- ERRORS -->
-        <div class='cart-flex-container' id='error-flex-container'>
-          <div class='cart cart-row-1'>
-            <i class="fa fa-warning" aria-hidden="true"></i>
-          </div>
-          <div class='cart-row-2'>
-            <div class='cart cart-quantity' id='cart-quantity'>
-              0
-            </div>
-            <div class='cart cart-items'>errors</div>
-          </div>
+              <!-- CART -->
+              <div class='cart-flex-container' id='cart-flex-container'>
+                <div class='cart cart-row-1'>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+                <div class='cart-row-2'>
+                  <div class='cart cart-quantity' id='cart-quantity'>
+                    0
+                  </div>
+                  <div class='cart cart-items'>in cart</div>
+                </div>
+              </div>
+
+              <!-- ERRORS -->
+                <div class='cart-flex-container' id='error-flex-container'>
+                  <div class='cart cart-row-1'>
+                    <i class="fa fa-warning" aria-hidden="true"></i>
+                  </div>
+                  <div class='cart-row-2'>
+                    <div class='cart cart-quantity' >
+                      0
+                    </div>
+                    <div class='cart cart-items'>errors</div>
+                  </div>
+                </div>
+
         </div>
 
-        <!-- CART -->
-        <div class='cart-flex-container' id='cart-flex-container'>
-          <div class='cart cart-row-1'>
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          </div>
-          <div class='cart-row-2'>
-            <div class='cart cart-quantity' id='cart-quantity'>
-              0
-            </div>
-            <div class='cart cart-items'>in cart</div>
-          </div>
-        </div>
 
-
-
-      <!-- <img class='icon shopping-cart-icon' src="cart-icon.png" alt="" /> -->
-      <img src="hamburger-icon.png" class='icon hamburger-icon'  alt="" />
     </nav>
 
-    <div class="container">
+    <div class="below-nav-stuff container">
 
 
 
@@ -123,7 +123,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
-      <div class="modal-header">
+      <div class="modal-header" id='add-resources-modal-header'>
         <h5 class="modal-title" id="exampleModalLongTitle">Add Resources</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -149,71 +149,129 @@
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
                     <li>
                         Sennheiser Full Kit
                         <br>
-                        <a class='show-item-detail' href="#">View Details</a>
-                        <a class='hide-item-detail' href="#">Add to Cart</a>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
                     </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
 
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
+
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
+
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="add-resources-modal-header">Add to Cart</a>
+
+                    </li>
+                    <li>
+                        Sennheiser Full Kit
+                        <br>
+                        <a class='show-item-detail' href="#add-resources-modal-header">View Details</a>
+                        <a class='hide-item-detail' href="#add-resources-modal-header">Add to Cart</a>
+
+                    </li>
 
 
                 </ul>
@@ -230,90 +288,90 @@
 
                 <div class="item-detail-content">
 
-                                    <div class="">
-                                      <img class='resource-image' src="https://www.bhphotovideo.com/images/categoryImages/desktop/325x325/21008-DSLR-Cameras.jpg" alt="" />
-                                    </div>
+                    <div class="">
+                      <img class='resource-image' src="https://www.bhphotovideo.com/images/categoryImages/desktop/325x325/21008-DSLR-Cameras.jpg" alt="" />
+                    </div>
 
 
-                                    <div class="resource-details">
-                                        <h5>Sennheiser Full Kit </h5>
-                                      <p>Usage Fee: $10/hour</p>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    </div>
-
-
-
-                                    <div class="add-resource">
-                                      <button onclick='addToCart()' class='btn btn-yellow hide-item-detail'>Add To Cart</button>
-
-                                      <div id="accordion" role="tablist" aria-multiselectable="true">
-                                      <div class="card">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTimeline" aria-expanded="false" aria-controls="collapseTimeline">
-                                          <div class="card-header btn-yellow" role="tab" id="headingOne">
-                                                Specific Items & Availability
-                                          </div>
-                                        </a>
-
-                                        <div id="collapseTimeline" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                                          <div class="table-container card-block">
+                    <div class="resource-details">
+                        <h5>Sennheiser Full Kit </h5>
+                      <p>Usage Fee: $10/hour</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
 
 
 
+                    <div class="add-resource">
+                      <button onclick="addToCart()" class='btn btn-yellow hide-item-detail'>Add To Cart No Fun</button>
+
+                      <div id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="card">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTimeline" aria-expanded="false" aria-controls="collapseTimeline">
+                          <div class="card-header btn-yellow" role="tab" id="headingOne">
+                                Specific Items & Availability
+                          </div>
+                        </a>
+
+                        <div id="collapseTimeline" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="table-container card-block">
 
 
 
-                                            <!-- horizontal scroll -->
-                                            <div class="scrollmenu">
 
 
-                                              <table>
-                                                <tr>
-                                                  <td class='timeline-res-name'>
-                                                    Nikon Camera #XX <br>
-                                                    <a href="#">Reserve this item</a>
-                                                  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td class='timeline-res-name'>Nikon Camera #XX  </td>
 
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td class='timeline-res-name'>Nikon Camera #XX  </td>
-
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                  <td>Availabilty  </td>
-                                                </tr>
-                                              </table>
-                                          </div> <!-- end scrollmenu -->
+                            <!-- horizontal scroll -->
+                            <div class="scrollmenu">
 
 
-                                          </div> <!-- end card-block -->
-                                      </div> <!-- end collapseTimeline -->
-                                    </div> <!-- end card -->
-                                      </div> <!-- end accordion -->
-                                  </div> <!-- end add resource -->
+                              <table>
+                                <tr>
+                                  <td class='timeline-res-name'>
+                                    Nikon Camera #XX <br>
+                                    <a href="#">Reserve this item</a>
+                                  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                </tr>
+                                <tr>
+                                  <td class='timeline-res-name'>Nikon Camera #XX  </td>
+
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                </tr>
+                                <tr>
+                                  <td class='timeline-res-name'>Nikon Camera #XX  </td>
+
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                  <td>Availabilty  </td>
+                                </tr>
+                              </table>
+                          </div> <!-- end scrollmenu -->
+
+
+                          </div> <!-- end card-block -->
+                      </div> <!-- end collapseTimeline -->
+                    </div> <!-- end card -->
+                      </div> <!-- end accordion -->
+                  </div> <!-- end add resource -->
 
                 </div> <!-- end item detail content -->
           </div> <!-- end item detail col -->
